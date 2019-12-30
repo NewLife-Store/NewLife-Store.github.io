@@ -184,10 +184,7 @@
 <img src="http://www.viemu.com/vi-vim-cheat-sheet.gif" class="" width="600" height="600" title="点击查看大图:vi&#x2F;vim-cheat-sheet">
 <p>Hexo部分图片禁用fancybox</p>
 <p>hexo在使用fancybox插件时，图片的效果还是很可观的，但是我们往往是不需要所有的图片都用fancybox；<br>例如：hexo next主题下，添加某些图片的时候，有些事不需要可点击的<br>修改theme\next\source\js\src\utils.js 红色字体部分；</p>
-<p>diff –git a/source/js/src/utils.js b/source/js/src/utils.js<br>index 0f3704e..8516665 100644<br>— a/source/js/src/utils.js<br>+++ b/source/js/src/utils.js<br>@@ -11,6 +11,7 @@ NexT.utils = NexT.$u = {<br>       .not(‘.group-picture img, .post-gallery img’)<br>       .each(function() {<br>         var $image = $(this);</p>
-<ul>
-<li>if ($(this).hasClass(‘nofancybox’)) return;<br>var imageTitle = $image.attr(‘title’);<br>var $imageWrapLink = $image.parent(‘a’);<br>在img标签使用的时候加上class=”nofancybox”即可。</li>
-</ul>
+<p>在img标签使用的时候加上class=”nofancybox”即可。</p>
 <img src="http://www.viemu.com/vi-vim-cheat-sheet.gif" class="nofancybox" />
 
             </div>
